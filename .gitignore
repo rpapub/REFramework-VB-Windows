@@ -1,0 +1,66 @@
+# Vendored from https://github.com/rpapub/uipath-gitignore/blob/main/uipath-windows.gitignore
+# Update by re-fetching from that repo, not by hand-editing here.
+# UiPath Studio .gitignore — modern Studio (project.json targetFramework=Windows / .NET 6)
+# For older Studio (.NET Framework 4.6.x, "Legacy" target) see uipath-legacy.gitignore
+
+# Studio local build cache. Allow-list root + selectively keep .local/.entities/
+# (dataservice object DLLs live here; they ARE user content).
+!.local/
+.local/*
+!.local/.entities/
+
+# Project Settings → Activities Settings persistence
+# - .settings/Debug/ and .settings/Release/ persist user-edited per-package
+#   defaults for each build configuration. Both are user-intent; KEEP TRACKED.
+# - .settings/Design/ is per-session Studio Designer UI state. Ignore.
+.settings/Design/
+
+# Studio type-model hash cache. Transient; stale tracking is a real hazard
+# (file content is a hash that drifts on every package-set change).
+.tmh/
+
+# Object Repository — keep user content, ignore generated hashes / search index
+.objects/**/.attributes/SearchHash
+.objects/**/.hash
+
+# Test variations cache (Studio regenerates on test runs)
+.variations/
+
+# Studio-created folders that appear on project open (often empty or
+# Studio-managed; no observed need to track them)
+.entities/
+.templates/
+
+# Coded-workflow stubs auto-generated from the package set. Studio re-emits
+# if missing. Hand-customizing one? Override per-file with
+#   git add -f .codedworkflows/<file>.cs
+.codedworkflows/
+
+# Activity-binding metadata index — derived ~250 KB cache, Studio regenerates
+# from the installed package set on every save.
+.project/PackageBindingsMetadata.json
+
+# uipcli / wrapper pack artifacts
+bindings.json
+bindings_v2.json
+.uipath-pack.lock
+
+# Studio's auto-generated GlobalVariables compiled assembly. Normal location
+# is .local/.globalvariables/ (already covered). A crashed Studio build can
+# leave an orphan copy at the project root — this rule covers that case.
+**/GlobalVariables*.dll
+
+# Scratch / RnD workflows — devs keep local copies, never commit
+**/*[Ss]cratch*.xaml
+**/*[Ss]cratch*.xaml.json
+*[Ss]cratch*.xaml
+*[Ss]cratch*.xaml.json
+**/*[Rr]n[dD]*.xaml
+*[Rr]n[dD]*.xaml
+
+# Backup files Studio leaves on disk
+**/*.xaml.bak
+**/.content.bak
+
+# Unsaved-XAML lock files (Studio temp prefix)
+~*
