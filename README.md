@@ -12,5 +12,8 @@ For more information, see the main project: [BuoyantXenon](https://github.com/rp
 - [release/v22.8.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v22.8.0)
 - [release/v23.10.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v23.10.0)
 - [release/v23.4.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v23.4.0)
+- [release/v24.10.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v24.10.0)
+- [release/v24.2.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v24.2.0)
+- [release/v25.0.0](https://github.com/rpapub/REFramework-VB-Windows/tree/release/v25.0.0)
 
 <!-- END OF AUTO-GENERATED CONTENT -->
